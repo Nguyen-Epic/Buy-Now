@@ -8,7 +8,7 @@
 
     <title>Document</title>
 </head>
-<body>
+<body background="sontung.webp">
     <div class="card">
         <div class="card_heart">
             <i class="bx bx-heart"></i>
@@ -42,7 +42,28 @@
             <button>Buy Now</button>
             <button>Add Cart</button>
          </div>
-    </div>
+    </div>   
+    <style>
+      body {
+          margin: 0;
+          height: 100vh;
+          overflow: hidden; /* Ngăn các thanh cuộn hiển thị */
+          background-image: url('sontung.webp'); /* Thay 'path-to-your-image.jpg' bằng đường dẫn tới hình ảnh của bạn */
+          background-size: contain; /* Để hình nền phù hợp với phần tử */
+          background-repeat: repeat-x; /* Để hình nền lặp lại theo chiều ngang */
+          background-position: 0 0; /* Vị trí bắt đầu của hình nền */
+          animation: moveBackground 10s linear infinite; /* Thiết lập animation */
+      }
+
+      @keyframes moveBackground {
+          0% {
+              background-position: 0 0; /* Bắt đầu từ vị trí gốc */
+          }
+          100% {
+              background-position: 100% 0; /* Kết thúc ở cuối chiều ngang */
+          }
+      }
+  </style>
 </body>
 </html>
 
